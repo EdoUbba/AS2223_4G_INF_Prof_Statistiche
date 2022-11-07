@@ -9,11 +9,11 @@ namespace AS2223_4G_INF_Prof_Statistiche
     public class Statistiche
     {
 
-        int sommaValori;
-        int numeroValori;
-        int sommaValoriPerPeso;
+        double sommaValori;
+        double numeroValori;
+        double sommaValoriPerPeso;
         double sommaPesi;
-        int mediaAritmetica;
+        double mediaAritmetica;
         double mediaPonderata;
         int cont;
 
@@ -43,7 +43,7 @@ namespace AS2223_4G_INF_Prof_Statistiche
         /// <param name="peso"></param>
         public void AddValue(int valore, double peso)
         {
-            sommaValoriPerPeso = sommaValoriPerPeso + valore;
+            sommaValoriPerPeso = sommaValoriPerPeso + valore * peso;
             sommaPesi = sommaPesi + peso;
             cont++;
         }
