@@ -13,6 +13,8 @@ namespace AS2223_4G_INF_Prof_Statistiche
         int numeroValori;
         int sommaValoriPerPeso;
         double sommaPesi;
+        int mediaAritmetica;
+        double mediaPonderata;
 
 
 
@@ -51,7 +53,8 @@ namespace AS2223_4G_INF_Prof_Statistiche
         /// <returns></returns>
         public double MediaAritmetica()
         {
-            
+            mediaAritmetica = sommaValori / numeroValori;
+            return mediaAritmetica;
         }
 
         /// <summary>
@@ -61,7 +64,8 @@ namespace AS2223_4G_INF_Prof_Statistiche
         /// <returns></returns>
         public double MediaPonderata()
         {
-            
+            mediaPonderata = sommaValoriPerPeso / sommaPesi;
+            return mediaPonderata;
         }
 
         /// <summary>
